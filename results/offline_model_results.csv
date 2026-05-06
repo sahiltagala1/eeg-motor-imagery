@@ -1,0 +1,3 @@
+,accuracy,accuracy_std,f1_score,confusion_matrix,n_subjects,n_epochs,n_csp_components,channels,filter,features,evaluation,epoch_window
+Random Forest,0.6,0.151,0.5958,"[[684, 450], [450, 666]]",50,2250,4,"['C3', 'Cz', 'C4', 'FC3', 'FC4', 'CP3', 'CP4']",8.0-30.0 Hz,"CSP (4 components, log variance)",Per-subject 5-fold stratified CV,0.5-3.5s
+MLP,0.5658,0.1146,0.6326,"[[424, 710], [267, 849]]",50,2250,4,"['C3', 'Cz', 'C4', 'FC3', 'FC4', 'CP3', 'CP4']",8.0-30.0 Hz,"CSP (4 components, log variance)",Per-subject 5-fold stratified CV,0.5-3.5s

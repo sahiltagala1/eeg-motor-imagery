@@ -1,0 +1,64 @@
+{
+  "Random Forest": {
+    "accuracy": 0.6,
+    "accuracy_std": 0.151,
+    "f1_score": 0.5958,
+    "confusion_matrix": [
+      [
+        684,
+        450
+      ],
+      [
+        450,
+        666
+      ]
+    ],
+    "n_subjects": 50,
+    "n_epochs": 2250,
+    "n_csp_components": 4,
+    "channels": [
+      "C3",
+      "Cz",
+      "C4",
+      "FC3",
+      "FC4",
+      "CP3",
+      "CP4"
+    ],
+    "filter": "8.0-30.0 Hz",
+    "features": "CSP (4 components, log variance)",
+    "evaluation": "Per-subject 5-fold stratified CV",
+    "epoch_window": "0.5-3.5s"
+  },
+  "MLP": {
+    "accuracy": 0.5658,
+    "accuracy_std": 0.1146,
+    "f1_score": 0.6326,
+    "confusion_matrix": [
+      [
+        424,
+        710
+      ],
+      [
+        267,
+        849
+      ]
+    ],
+    "n_subjects": 50,
+    "n_epochs": 2250,
+    "n_csp_components": 4,
+    "channels": [
+      "C3",
+      "Cz",
+      "C4",
+      "FC3",
+      "FC4",
+      "CP3",
+      "CP4"
+    ],
+    "filter": "8.0-30.0 Hz",
+    "features": "CSP (4 components, log variance)",
+    "evaluation": "Per-subject 5-fold stratified CV",
+    "epoch_window": "0.5-3.5s"
+  }
+}
