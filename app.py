@@ -180,7 +180,7 @@ with col1:
     by_label = dict(zip(labels, handles))
     ax.legend(by_label.values(), by_label.keys(), fontsize=7)
     ax.set_xlabel("Time (s)"); ax.set_ylabel("Amplitude (µV)")
-    ax.set_title(f"Filtered EEG — Channel {channel}")
+    ax.set_title(f"Filtered EEG - Channel {channel}")
     st.pyplot(fig, use_container_width=True)
     plt.close()
 
@@ -222,7 +222,7 @@ if epochs is None or len(epochs) == 0:
 
 n_left = np.sum(epochs.events[:, 2] == 2)
 n_right = np.sum(epochs.events[:, 2] == 3)
-st.success(f"Found **{len(epochs)}** epochs — {n_left} Left (T1) · {n_right} Right (T2)")
+st.success(f"Found **{len(epochs)}** epochs - {n_left} Left (T1) · {n_right} Right (T2)")
 
 # ── Section 4: Predictions ─────────────────────────────────────────────────
 st.markdown('<p class="section-header">4. Prediction Results & Evaluation</p>', unsafe_allow_html=True)

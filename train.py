@@ -135,7 +135,7 @@ def train():
         ax.set_xticklabels(["Left (T1)", "Right (T2)"])
         ax.set_yticklabels(["Left (T1)", "Right (T2)"])
         ax.set_xlabel("Predicted"); ax.set_ylabel("Actual")
-        ax.set_title(f"{name} — Confusion Matrix")
+        ax.set_title(f"{name} - Confusion Matrix")
         for i in range(2):
             for j in range(2):
                 ax.text(j, i, str(cm[i, j]), ha="center", va="center",
